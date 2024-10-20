@@ -10,24 +10,32 @@
         <!--Header-->
         <header>
             <!--Container-->
-            <div>
-                <nav>
+            <div class="container mx-auto px-4">
+                <nav class="flex justify-between items-center py-5">
                     <!--logo-->
-                    <div>
+                    <div class="w-32 md:w-full z-20">
                         <img src="./img/logo.png" alt="website logo" />
                     </div>
                     <!--links-->
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul id="menu" class="invisible c-menu md:visible">
+                        <li class="m-12 md:m-0">
+                            <a class="c-link" href="#">Home</a>
+                        </li>
+                        <li class="m-12 md:m-0">
+                            <a class="c-link" href="#">Product</a>
+                        </li>
+                        <li class="m-12 md:m-0">
+                            <a class="c-link" href="#">FAQ</a>
+                        </li>
+                        <li class="m-12 md:m-0">
+                            <a class="c-link" href="#">Contact</a>
+                        </li>
                     </ul>
                     <!--menu button-->
-                    <div>
+                    <div id="menu-button" class="z-20 md:hidden cursor-pointer">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
+                            class="h-8 w-8"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke-width="1.5"
@@ -43,6 +51,254 @@
                 </nav>
             </div>
         </header>
+        <!--Banner-->
+        <section>
+            <div
+                class="w-full bg-no-repeat bg-cover relative h-custom"
+                style="background-image: url(./img/banner.png)"
+            >
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-center"
+                >
+                    <!--tag-->
+                    <p class="text-xl mb-5">Food app</p>
+                    <!--title-->
+                    <h1
+                        class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl"
+                    >
+                        Why stay hungry when you can order form Bella Onoje
+                    </h1>
+                    <!--desc-->
+                    <p class="text-xl mb-5 font-light">
+                        Dowload the bella onoje's food app now on
+                    </p>
+                    <!--buttons-->
+                    <div class="flex justify-center">
+                        <button
+                            class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all"
+                        >
+                            Playstore
+                        </button>
+                        <button
+                            class="mx-4 border border-white bg-red:500 rounded-full px-10 py-3 hover:bg-red-500 hover:border-transparent transition-all"
+                        >
+                            Appstore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--App image-->
+        <section class="relative">
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/4"
+            >
+                <img
+                    class="max-w-none w-screen pl-20 md:w-auto"
+                    src="./img/app-img.png"
+                    alt="phone app screen"
+                />
+            </div>
+        </section>
+
+        <!--App steps-->
+        <section class="pt-96 mt-28 sm:pt-40-c md:mt-0">
+            <!--container-->
+            <div class="container mx-auto px-4">
+                <hr class="w-4/5 mx-auto h-0.5 bg-gray-200 md:w-2/5" />
+                <!--title-->
+                <h2 class="text-center text-4xl font-semibold py-10">
+                    How the app works
+                </h2>
+                <!--step 1-->
+                <div
+                    class="flex flex-col justify-evenly items-center py-10 md:flex-row"
+                >
+                    <!--img-->
+                    <div class="text-center mb-10">
+                        <img src="./img/app-1.png" alt="app screen" />
+                    </div>
+                    <!--text-->
+                    <div class="text-center md:text-left">
+                        <!--tag-->
+                        <span class="text-red-500 font-semibold"
+                            >Create an account</span
+                        >
+                        <!--title-->
+                        <h2
+                            class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5"
+                        >
+                            Create/login to an axisting account to get started
+                        </h2>
+                        <!--desc-->
+                        <p
+                            class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
+                        >
+                            An account is created with your email and a desired
+                            password
+                        </p>
+                    </div>
+                </div>
+                <!--step 2-->
+                <div
+                    class="flex flex-col justify-evenly items-center py-10 md:flex-row-reverse"
+                >
+                    <!--img-->
+                    <div class="text-center mb-10">
+                        <img src="./img/app-2.png" alt="app screen" />
+                    </div>
+                    <!--text-->
+                    <div class="text-center md:text-left">
+                        <!--tag-->
+                        <span class="text-red-500 font-semibold"
+                            >Create an account</span
+                        >
+                        <!--title-->
+                        <h2
+                            class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5"
+                        >
+                            Create/login to an axisting account to get started
+                        </h2>
+                        <!--desc-->
+                        <p
+                            class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
+                        >
+                            An account is created with your email and a desired
+                            password
+                        </p>
+                    </div>
+                </div>
+                <!--step 3-->
+                <div
+                    class="flex flex-col justify-evenly items-center py-10 md:flex-row"
+                >
+                    <!--img-->
+                    <div class="text-center mb-10">
+                        <img src="./img/app-3.png" alt="app screen" />
+                    </div>
+                    <!--text-->
+                    <div class="text-center md:text-left">
+                        <!--tag-->
+                        <span class="text-red-500 font-semibold"
+                            >Create an account</span
+                        >
+                        <!--title-->
+                        <h2
+                            class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5"
+                        >
+                            Create/login to an axisting account to get started
+                        </h2>
+                        <!--desc-->
+                        <p
+                            class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
+                        >
+                            An account is created with your email and a desired
+                            password
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Dowload-->
+        <section>
+            <!--background-->
+            <div
+                class="relative w-full h-custom bg-no-repeat bg-cover text-white"
+                style="background-image: url(./img/download.png)"
+            >
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+                >
+                    <!--title-->
+                    <h1
+                        class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl"
+                    >
+                        Dowload the app now
+                    </h1>
+                    <!--desc-->
+                    <p class="text-xl mb-5 font-light">
+                        Availble on your favorite store. Start your premium
+                        experience now
+                    </p>
+                    <!--button-->
+                    <div class="flex justify-center">
+                        <button
+                            class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all"
+                        >
+                            Playstore
+                        </button>
+                        <button
+                            class="mx-4 border border-white bg-red:500 rounded-full px-10 py-3 hover:bg-red-500 hover:border-transparent transition-all"
+                        >
+                            Appstore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <section>
+            <!--container-->
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col justify-between items-center py-5 md:flex-row">
+                    <!--logo-->
+                    <div class="w-32 md:w-full">
+                        <img src="./img/logo.png" alt="website logo" />
+                    </div>
+                    <!--contact-->
+                    <div class="flex items-center mt-5 text-gray-500 w-full justify-center md:justify-end">
+                        <!--phone-->
+                        <a href="tel:093482392" class="flex mx-4">
+                            <!--icon-->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="h-6 w-6 text-red-500 mr-4"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                                />
+                            </svg>
+                            <!--number-->
+                            <p>093482392</p>
+                        </a>
+                        <!--email-->
+                        <a href="mailto:info@me.com" class="flex mx-4">
+                            <!--icon-->
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="h-6 w-6 text-red-500 mr-4"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                                />
+                            </svg>
+                            <!--address-->
+                            <p>info@me.com</p>
+                        </a>
+                    </div>
+                </div>
+                <!--copy-->
+                <div class="text-center my-4">
+                    <p class="text-gray-500">Copy &copy; 2024 Tailwind App</p>
+                </div>
+            </div>
+        </section>
+
         <script src="./main.js"></script>
     </body>
 </html>
